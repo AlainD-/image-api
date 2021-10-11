@@ -5,7 +5,7 @@ dotenv.config();
 const app: Express = express();
 
 app.get('/', (req: Request, res: Response): void => {
-  res.send({hello: 'world'});
+  res.send({ hello: 'world' });
 });
 
 const port = process.env.PORT || 3000;
