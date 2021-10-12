@@ -1,12 +1,14 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import dotenv from 'dotenv';
+import logger from './middleware/logger';
+import startupAppConfig from './startup/app-config';
+import setRoutes from './routes';
 
 dotenv.config();
 const app: Express = express();
 
-app.get('/', (req: Request, res: Response): void => {
-  res.send({ hello: 'world' });
-});
+startupAppConfig(app);
+setRoutes(app);
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => logger.info(`Listening on port ${port}...`));
