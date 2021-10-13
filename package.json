@@ -7,7 +7,8 @@
     "start": "nodemon src/index.ts",
     "build": "tsc --project ./",
     "lint": "eslint \"src/**/*.ts\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine"
   },
   "repository": {
     "type": "git",
@@ -35,15 +36,20 @@
     "express": "4.17.1",
     "express-async-errors": "3.1.1",
     "helmet": "4.6.0",
+    "jasmine": "3.9.0",
+    "jasmine-spec-reporter": "7.0.0",
     "morgan": "1.10.0",
+    "supertest": "6.1.6",
     "winston": "3.3.3"
   },
   "devDependencies": {
     "@types/cors": "2.8.12",
     "@types/express": "4.17.13",
     "@types/helmet": "4.0.0",
+    "@types/jasmine": "3.9.1",
     "@types/morgan": "1.9.3",
     "@types/node": "16.10.3",
+    "@types/supertest": "2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint": "7.32.0",
