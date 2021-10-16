@@ -8,6 +8,7 @@ dotenv.config();
 const app: Express = express();
 
 startupAppConfig(app);
+app.use(express.static(`${__dirname}/assets`));
 setRoutes(app);
 
 const port = process.env.PORT || 3000;
