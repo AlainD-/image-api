@@ -16,7 +16,7 @@ export default function appConfig(app: Express): void {
   const CORS_OPTIONS = {
     origin: '*',
     optionsSuccessStatus: 200,
-    exposedHeaders: ['Content-Disposition'], // add 'Content-Disposition' to CORS for download features
+    exposedHeaders: ['Content-Disposition', 'X-Filename'], // add 'Content-Disposition' to CORS for download features
   };
   app.options('*', cors() as RequestHandler); // enable pre-flight request. include before other routes
   app.use(cors(CORS_OPTIONS));
