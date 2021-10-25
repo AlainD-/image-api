@@ -9,6 +9,8 @@ For instance,
 <img src="http://<my-server>/api/v1/images?filename=autumn-1.jpg&width=200">
 ```
 
+This application is powered with `NodeJS` and `Express`. The API uses `Sharp` to convert and resize the images.
+
 ## Installation
 
 Execute `npm install` or `npm i` from the root folder in order to install the required packages.
@@ -22,6 +24,10 @@ To specify a different port for the server, create a `.env` file in the root fol
 ```bash
 PORT=3002
 ```
+
+## Tests
+
+Run in the console `npm test` to execute the test. Tests are powered with Jasmine.
 
 ## API
 
