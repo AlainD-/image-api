@@ -1,6 +1,6 @@
 import sharp from 'sharp';
 import { getImageFullPath, getImageThumbPath } from './image.service';
-import toNullableNumber from './utils.service';
+import { toNullableNumber } from './utils.service';
 
 export default async function createImageThumb(
   filename: string,

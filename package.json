@@ -8,6 +8,7 @@
     "build": "tsc --project ./",
     "lint": "eslint \"src/**/*.ts\"",
     "jasmine": "jasmine",
+    "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
     "test": "npm run build && npm run jasmine"
   },
   "repository": {

@@ -48,8 +48,6 @@ Run in the console `npm test` to execute the test. Tests are powered with Jasmin
     * **response**:
       * `200`: The thumbnail of the image at the specified dimension(s). If neither width nor height is provided, the original image is returned. If there is already an existing thumbnail created for the provided dimension(s) in the cache, that cached thumbnail is returned
     * **errors**:
-      * Note that all the error listed bellow returns an _error_ image to be consistent with the placeholder image API. Typically it will be a jpg image with the mention "Image not found" on it.
-        * <img src="https://raw.githubusercontent.com/AlainD-/image-api/master/assets/images/error/image-not-found.png" height="100px" />
       * `400`: If the query parameter `filename` is not specified
       * `404`: If the image specified by `filename` does not exist
       * `500`: If an unexpected error occured during the creation of the thumbnail

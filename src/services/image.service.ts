@@ -1,7 +1,7 @@
 import path from 'path';
 import { promises as fs, constants } from 'fs';
 import { IMAGES_FULL_PATH, IMAGES_THUMB_PATH } from '../constants/config.constants';
-import toNullableNumber from './utils.service';
+import { toNullableNumber } from './utils.service';
 
 export function getThumbName(
   filename: string,
