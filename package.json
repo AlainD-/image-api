@@ -4,7 +4,7 @@
   "description": "Node project API to resize images and/or get resized/thumbnails of images",
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon --exec npx ts-node src/index.ts",
     "build": "tsc --project ./",
     "lint": "eslint \"src/**/*.ts\"",
     "jasmine": "jasmine",
